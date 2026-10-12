@@ -1,25 +1,24 @@
 :root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#22282e;background:#fafaf8;font-synthesis:none;font-weight:400}
 *{box-sizing:border-box}
 body{margin:0;min-width:320px}
-main{width:min(100% - 64px,1040px);min-height:100svh;margin:auto;padding:38px 0;display:flex;flex-direction:column;justify-content:center;text-align:center}
+main{width:min(100% - 64px,1040px);min-height:100svh;margin:auto;padding:28px 0;display:flex;flex-direction:column;justify-content:center;text-align:center}
 p,h1,h2{margin:0;font-weight:400}
 .domain{font-size:clamp(112px,12.5vw,180px);line-height:.94;letter-spacing:-.07em;font-variant-numeric:lining-nums;white-space:nowrap;color:#202a35}
 .domain span{color:#0865ce}
-h1{margin:25px auto 20px;font-size:clamp(38px,3.7vw,53px);line-height:1.09;letter-spacing:-.04em;text-wrap:balance}
-.description{max-width:715px;margin:auto;color:#4b5661;font-size:22px;line-height:1.5;text-wrap:pretty}
-.telegram{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:88px;min-width:440px;padding:22px 36px;margin-top:30px;border:1px solid #1263c5;border-radius:22px;background:linear-gradient(115deg,#0868d2,#1379df 40%,#1465cf 70%,#0868d2);background-size:220% 100%;color:#fff;text-decoration:none;font-size:27px;line-height:1.4;box-shadow:0 12px 26px #0868d029,inset 0 1px 0 #ffffff55,inset 0 -2px 0 #06469a30;transition:transform .16s ease,box-shadow .16s ease;animation:blue-flow 9s ease-in-out infinite}
+h1{margin:12px auto 12px;font-size:clamp(38px,3.7vw,53px);line-height:1.09;letter-spacing:-.04em;text-wrap:balance}
+.description{max-width:740px;margin:auto;color:#4b5661;font-size:22px;line-height:1.4;text-wrap:pretty}
+.telegram{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:88px;min-width:440px;padding:22px 36px;margin-top:20px;border:1px solid #1263c5;border-radius:22px;background:linear-gradient(115deg,#0868d2,#1379df 40%,#1465cf 70%,#0868d2);background-size:220% 100%;color:#fff;text-decoration:none;font-size:27px;line-height:1.4;box-shadow:0 12px 26px #0868d029,inset 0 1px 0 #ffffff55,inset 0 -2px 0 #06469a30;transition:transform .16s ease,box-shadow .16s ease;animation:blue-flow 9s ease-in-out infinite}
 .telegram::before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(110deg,transparent 30%,#ffffff18 49%,transparent 68%);transform:translateX(-120%);animation:soft-light 9s ease-in-out infinite;pointer-events:none}
 .telegram:hover{transform:translateY(-2px);box-shadow:0 16px 30px #0868d036,inset 0 1px 0 #ffffff65}
 .telegram:hover::before{animation-duration:3s}
 .telegram:active{transform:translateY(1px);box-shadow:0 4px 10px #0868d02b,inset 0 2px 4px #06469a22}
 .telegram:focus-visible{outline:3px solid #202a35;outline-offset:6px}
 .telegram svg{flex:none}
-.sources{max-width:860px;width:100%;margin:38px auto 0;padding-top:24px;border-top:1px solid #d7dce1}
-.sources h2{font-size:18px;line-height:1.5;color:#515e6a}
-.sources ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:820px;list-style:none;padding:0;margin:17px auto 0}
+.sources{max-width:860px;width:100%;margin:24px auto 0}
+.sources ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:820px;list-style:none;padding:0;margin:0 auto}
 .sources li{font-size:18px;line-height:1.4;border:1px solid #dce3ea;border-radius:9px;padding:8px 14px;background:#eef2f5;color:#33465a;white-space:nowrap}
 @keyframes blue-flow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 @keyframes soft-light{0%,65%{transform:translateX(-120%)}90%,100%{transform:translateX(120%)}}
-@media(max-width:600px){main{width:calc(100% - 36px);padding:34px 0;justify-content:flex-start}.domain{font-size:clamp(85px,24vw,140px);letter-spacing:-.075em}h1{font-size:clamp(30px,8.3vw,44px);line-height:1.12;margin:25px 0 20px;letter-spacing:-.045em}.description{font-size:19px;line-height:1.5;max-width:430px}.telegram{width:100%;min-width:0;max-width:440px;min-height:80px;margin-top:26px;padding:20px 12px;font-size:23px;gap:12px;border-radius:19px}.telegram svg{width:27px;height:27px}.sources{margin-top:29px;padding-top:23px}.sources ul{gap:8px;margin-top:16px}.sources li{padding:7px 11px}}
+@media(max-width:600px){main{width:calc(100% - 36px);padding:24px 0;justify-content:flex-start}.domain{font-size:clamp(85px,24vw,140px);letter-spacing:-.075em}h1{font-size:clamp(30px,8.3vw,44px);line-height:1.12;margin:16px 0 12px;letter-spacing:-.045em}.description{font-size:19px;line-height:1.5;max-width:430px}.telegram{width:100%;min-width:0;max-width:440px;min-height:80px;margin-top:20px;padding:20px 12px;font-size:23px;gap:12px;border-radius:19px}.telegram svg{width:27px;height:27px}.sources{margin-top:20px}.sources ul{gap:8px;margin-top:0}.sources li{padding:7px 11px}}
 @media(prefers-reduced-motion:reduce){.telegram,.telegram::before{animation:none;transition:none}.telegram::before{display:none}.telegram:hover,.telegram:active{transform:none}}
 @media(prefers-reduced-transparency:reduce){.telegram{background:#0867d0;box-shadow:none;animation:none}.telegram::before{display:none}}
